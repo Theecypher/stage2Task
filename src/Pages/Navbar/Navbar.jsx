@@ -1,8 +1,7 @@
 import { useEffect, useState } from "react";
-import NikeLogo from "../../assets/NikeLogo.svg";
+import NikeLogo from "../../assets/nikeLogo.svg";
 import hamMenu from "../../assets/hamburger.svg";
 import Button from "../../Component/Button";
-// import {} from ""
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
