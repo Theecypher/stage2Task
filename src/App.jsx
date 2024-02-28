@@ -7,17 +7,19 @@ import Button from "./ToggleClick/Button";
 import ClickandScroll from "./Component/HorizontalScroll";
 import HorizontalScrollComponent from "./Component/horizontalScroll+button";
 import Product from "./Pages/Product/products";
+import SignIn from "./Onboarding/signin";
+import TimerModal from "./Onboarding/on";
+import About from "./Pages/About";
+import Cards from "./Pages/Cards/cards";
 
 const App = () => {
   return (
     <div>
-      {/* <div className="flex min-h-[100vh]  justify-center items-center font-sans text-[20px] m-0 bg-orange-500"> */}
-      {/* <Active /> */}
-      {/* <ClickandScroll /> */}
       <Navbar />
       <Hero />
       <Product />
-      {/* <HorizontalScrollComponent /> */}
+      <About />
+      <Cards />
     </div>
   );
 };

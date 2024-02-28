@@ -10,9 +10,7 @@ const Navbar = () => {
   const handleScroll = () => {
     const offset = window.scrollY;
 
-    // console.log(offset);
-
-    if (offset > 200) {
+    if (offset > 130) {
       setScrolled(true);
     } else {
       setScrolled(false);
@@ -28,7 +26,7 @@ const Navbar = () => {
       className={
         !scrolled
           ? "w-[100%] px-[10px] items-center min-h-[11vh] box-border flex justify-between bg-gray-800 transition-all ease-in duration-75"
-          : "w-[100%] px-[10px] items-center min-h-[11vh] box-border flex justify-between transition-all ease-in duration-75 fixed top-0 left-0 bg-blue-300"
+          : "w-[100%] px-[10px] items-center min-h-[11vh] box-border flex justify-between transition-all ease-in duration-75 fixed top-0 left-0 bg-gray-900"
       }
     >
       <div>
