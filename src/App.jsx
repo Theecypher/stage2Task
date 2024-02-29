@@ -11,6 +11,8 @@ import SignIn from "./Onboarding/signin";
 import TimerModal from "./Onboarding/on";
 import About from "./Pages/About";
 import Cards from "./Pages/Cards/cards";
+import SpecialOffer from "./Pages/SpecialOffer";
+import Customer from "./Pages/CustomerReview/Customer";
 
 const App = () => {
   return (
@@ -20,6 +22,8 @@ const App = () => {
       <Product />
       <About />
       <Cards />
+      <SpecialOffer />
+      <Customer />
     </div>
   );
 };
