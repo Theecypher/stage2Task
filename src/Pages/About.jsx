@@ -4,9 +4,10 @@ import img from "../assets/productShoe.svg";
 
 const About = () => {
   return (
-    <div className="mt-[100px] flex flex-col justify-center items-center">
-      <div className=" w-[306px]">
-        <h2 className="text-[44px] font-bold">
+    <div className="mt-[100px] flex border border-black flex-col justify-center items-center">
+      <div className="flex justify-between">
+        <div>
+        <h2 className="text-[44px] font-bold w-[306px]">
           We Provide You <span className="text-red-500">Super Quality</span>{" "}
           Shoes
         </h2>
@@ -19,6 +20,7 @@ const About = () => {
           Our dedication to detail and excellence ensures your satisfaction
         </p>
         <Button text="View details" />
+        </div>
 
         <div>
           <img src={img} className="w-[306px]" alt="" />

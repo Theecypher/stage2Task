@@ -15,6 +15,8 @@ import SpecialOffer from "./Pages/SpecialOffer";
 import Customer from "./Pages/CustomerReview/Customer";
 import Subscribe from "./Pages/Subscribe/Subscribe";
 import Footer from "./Pages/Footer/footer";
+import CreateComment from "./Tweet/createComment";
+import NewComment from "./Tweet/newComment";
 
 const App = () => {
   return (

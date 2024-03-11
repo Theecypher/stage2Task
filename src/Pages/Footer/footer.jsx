@@ -4,8 +4,8 @@ import logo from "../../assets/footer-logo.svg";
 
 const Footer = () => {
   return (
-    <div className="bg-black px-5 py-9">
-      <div className="flex justify-center items-start gap-14 flex-wrap max-lg:flex-col text-white">
+    <div className="bg-black px-10 pt-[120px] pb-6 md:py-[100px] mt-10">
+      <div className="flex justify-center md:justify-start items-start gap-14 flex-wrap max-lg:flex-col text-white">
         <div>
           <img
             src={logo}
@@ -24,33 +24,37 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* <div className="flex flex-col"> */}
-        {Content.map((element, index) => (
-          <div key={index}>
-            <h4 className="text-2xl mb-6 text-white leading-normal font-medium">
-              {element.name}
-            </h4>
-            <div className="flex flex-col">
-              <ul className="">
-                {element.links.map((links, index) => (
-                  <li
-                    className="mt-3 text-base leading-normal text-gray-200 p-[3px] hover:text-gray-800"
-                    key={index}
-                  >
-                    {links.name}
-                  </li>
-                ))}
-              </ul>
+        {/* <div className="md:grid grid-cols-3 gap-20"> */}
+        <div className="flex flex-1 justify-between lg:gap-10 gap-20 flex-wrap">
+          {Content.map((element, index) => (
+            <div key={index} className="my-10 md:my-0">
+              <h4 className="text-2xl mb-2 text-white leading-normal font-medium">
+                {element.name}
+              </h4>
+              <div className="flex flex-col">
+                <ul className="">
+                  {element.links.map((links, index) => (
+                    <li
+                      className="mt-3 text-base leading-normal text-gray-200 p-[3px] hover:text-gray-800"
+                      key={index}
+                    >
+                      {links.name}
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
-          </div>
-        ))}
-        {/* </div> */}
+          ))}
+        </div>
       </div>
 
-      <div className="flex flex-col md:justify-between items-center mt-24 text-gray-400">
-        <p className="leading-normal text-base">Copyright. All rights reserved.</p>
+      <div className="flex flex-col md:justify-between md:flex-row items-center mt-24 text-gray-400">
+        <p className="leading-normal text-base">
+          Copyright. All rights reserved.
+        </p>
         <p className="cursor-pointer">Terms & conditions</p>
       </div>
+
     </div>
   );
 };

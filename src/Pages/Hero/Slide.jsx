@@ -1,7 +1,7 @@
 import shoe1 from "../../assets/big-shoe1.png";
 import shoe2 from "../../assets/big-shoe2.png";
 import shoe3 from "../../assets/big-shoe3.png";
-import shoe4 from "../../assets/big-shoe2.png";
+import "./slide.css"
 import { useState } from "react";
 
 const Slide = () => {
@@ -27,19 +27,19 @@ const Slide = () => {
 
   const toggleActiveStyles = (index) => {
     if (appState.objects[index] === appState.activeObject) {
-      return "w-[90px] bg-gray-100 my-2 mx-[15px] p-3 rounded-xl border-[2px] border-red-600";
+      return "w-[90px] md:w-[140px] bg-gray-100 my-2  mx-[15px] p-3 rounded-xl border-[2px] border-red-600";
     } else {
-      return "w-[90px] bg-gray-100 my-2 mx-[15px] p-3 rounded-xl";
+      return "w-[90px] md:w-[140px] bg-gray-100 my-2  mx-[15px] p-3 rounded-xl";
     }
   };
 
   return (
     <div className="relative">
-      <div className="bg-blue-100 p-9">
-        <img className="w-[600px]" src={currentImage} alt="" />
+      <div className="bg-blue-100 p-9 md:p-[120px] slide">
+        <img className="w-[600px] mx-auto" src={currentImage} alt="" />
       </div>
 
-      <div className="flex absolute bottom-[-60px]">
+      <div className="flex left-[50%] translate-x-[-50%] absolute bottom-[-60px]">
         {appState.objects.map((elements, index) => (
           <img
             key={index}

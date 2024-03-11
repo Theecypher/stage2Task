@@ -1,23 +1,23 @@
 import ProductData from "./productData";
-import { FaHeart, FaStar } from "react-icons/fa";
+import { FaStar } from "react-icons/fa";
 
 const Product = () => {
   return (
-    <div className="mt-[150px]">
+    <div className="mt-[150px] flex flex-col justify-center items-center md:items-start mx-8">
       <div className="flex flex-col justify-center items-center">
-        <h2 className="text-[42px] w-[70%] leading-[120%] font-[700]">
-          Our <span className="text-orange-600">Popular</span> Products
+        <h2 className="text-[45px] leading-[120%] w-[306px] md:w-full font-[700]">
+          Our <span className="text-[#ff4040]">Popular</span> Products
         </h2>
-        <p className="w-[70%] text-[#1e1e1e] opacity-75 mt-[30px]">
+        <p className="text-[#1e1e1e] w-[306px] font-light text-[18px] opacity-90 mt-[25px] md:w-full">
           Experience top-notch quality and style with our sought-after
           selections. Discover a world of comfort, design, and value
         </p>
       </div>
 
-      <div className="flex flex-col justify-center items-center gap-12 mt-12 ">
+      <div className="flex flex-col md:grid grid-cols-3 justify-center items-center gap-12 mt-12 md:gap-3">
         {ProductData.map((item, index) => (
-          <article>
-            <img src={item.img} className="w-[250px] mb-5" alt="" />
+          <article key={index}>
+            <img src={item.img} className="w-[280px] h-[280px] md:w-[350px] md:h-[350px] mb-5" alt="" />
             <div>
               <div className="flex gap-2 items-center">
                 <FaStar className="text-red-600 text-xl" />

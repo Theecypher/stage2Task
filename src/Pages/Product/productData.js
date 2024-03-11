@@ -1,6 +1,7 @@
 import img1  from "../../assets/shoe4.svg";
 import  img2 from "../../assets/shoe5.svg";
 import img3 from "../../assets/shoe6.svg";
+import img4 from "../../assets/shoe7.svg";
 
 const ProductData = [
   {
@@ -20,6 +21,12 @@ const ProductData = [
     rating: "(4.6)",
     name: "Nike Jordan-100",
     price: "$220.20",
+  },
+  {
+    img: img4,
+    rating: "(4.6)",
+    name: "Nike Jordan-001",
+    price: "$230.20",
   },
 ];
 
