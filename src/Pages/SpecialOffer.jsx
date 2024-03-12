@@ -39,7 +39,7 @@ const SpecialOffer = () => {
         src={img2}
         width={760}
         height={730}
-        className="mt-12 md:mt-5 self-center"
+        className="mt-12 md:mt-5 ml-[20px] md:mx-0"
         alt=""
       />
       {/* </div> */}

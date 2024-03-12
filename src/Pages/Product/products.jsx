@@ -14,10 +14,10 @@ const Product = () => {
         </p>
       </div>
 
-      <div className="flex flex-col md:grid grid-cols-3 justify-center items-center gap-12 mt-12 md:gap-3">
+      <div className="flex flex-col md:flex-row justify-center items-center gap-12 mt-12 md:gap-2">
         {ProductData.map((item, index) => (
           <article key={index}>
-            <img src={item.img} className="w-[280px] h-[280px] md:w-[350px] md:h-[350px] mb-5" alt="" />
+            <img src={item.img} className="w-[280px] h-[280px] md:w-[350px] md:h-[350px] mb-5 lg:mb-1" alt="" />
             <div>
               <div className="flex gap-2 items-center">
                 <FaStar className="text-red-600 text-xl" />
