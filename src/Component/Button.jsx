@@ -8,6 +8,8 @@ const Button = ({ text, icon, redButton }) => {
         {text}
         {icon}
       </button>
+
+      {/* <button onClick={onClick} className={twMerge('bg-main-blue py-[10px] px-[24px] text-white text-[16px] rounded-[16px] hover:bg-opacity-75', className)}>{children}</button> */}
     </div>
   );
 };

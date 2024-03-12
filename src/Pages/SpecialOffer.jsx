@@ -4,12 +4,12 @@ import img2 from "../assets/offer.svg";
 
 const SpecialOffer = () => {
   return (
-    <div className="flex md:border-red-600 border border-green-700 flex-col justify-center items-center gap-2 mt-[80px] md:items-start md:mx-14">
+    <div className="flex md:border-red-600 flex-col justify-center items-center gap-2 mt-[80px] md:items-start md:mx-14">
       {/* <div className="flex-1"> */}
       <div className="flex flex-col justify-center items-center">
         <h2 className="text-[45px] font-bold w-full">
           {" "}
-          <span className="text-[#ff4040] font-bold">Special</span> Offers
+          <span className="text-[#ff4040] font-bold">Special</span> Offer
         </h2>
         <p className="mt-5 w-[306px] md:w-full text-[20px] font-extralight">
           Embark on a shopping journey that redefines your experience with

@@ -39,7 +39,7 @@ const Slide = () => {
         <img className="w-[600px] mx-auto" src={currentImage} alt="" />
       </div>
 
-      <div className="flex left-[50%] translate-x-[-50%] absolute bottom-[-60px]">
+      <div className="flex md:left-[50%] md:translate-x-[-50%] absolute bottom-[-60px]">
         {appState.objects.map((elements, index) => (
           <img
             key={index}
