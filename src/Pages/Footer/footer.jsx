@@ -4,7 +4,7 @@ import logo from "../../assets/footer-logo.svg";
 
 const Footer = () => {
   return (
-    <div className="bg-black px-10 pt-[120px] pb-6 md:py-[100px] mt-10">
+    <div className="bg-black px-10 pt-[120px] pb-6 md:pt-[100px] md:pb-[50px] mt-10">
       <div className="flex justify-center md:justify-start items-start gap-14 flex-wrap max-lg:flex-col text-white">
         <div>
           <img
@@ -48,7 +48,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="flex flex-col md:justify-between md:flex-row items-center mt-24 text-gray-400">
+      <div className="flex flex-col md:justify-between md:flex-row items-center mt-[120px] text-gray-400">
         <p className="leading-normal text-base">
           Copyright. All rights reserved.
         </p>

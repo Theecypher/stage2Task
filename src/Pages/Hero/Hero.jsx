@@ -9,7 +9,7 @@ const Hero = () => {
         <p className="text-red-500  text-xl tracking-[1px]">
           Our Summer Collections
         </p>
-        <h1 className="text-[70px] font-[700] leading-[120%] pt-[50px] w-[100%] tracking-[1.2px] md:w-[90%] md:text-[90px]">
+        <h1 className="text-[70px] font-[700] leading-[120%] pt-[50px] w-[100%] tracking-[1.2px] md:w-[60%] md:text-[90px]">
           The New Arrival <span className="text-red-500">Nike</span> Shoes
         </h1>
         <p className="text-[20px] pt-[35px] leading-[150%] w-[90%] tracking-[0.87x] text-[#1e1e1e] opacity-[0.7] mb-[25px] md:w-[40%]">

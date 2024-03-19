@@ -35,11 +35,11 @@ const Slide = () => {
 
   return (
     <div className="relative lg:h-full">
-      <div className="bg-blue-100 p-9 md:p-[120px] slide">
+      <div className="bg-blue-100 p-9 md:p-[80px] slide">
         <img className="w-[600px] mx-auto" src={currentImage} alt="" />
       </div>
 
-      <div className="flex md:left-[50%] md:translate-x-[-50%] absolute bottom-[-60px] lg:bottom-0">
+      <div className="flex md:left-[50%] md:translate-x-[-50%] absolute bottom-[-60px]">
         {appState.objects.map((elements, index) => (
           <img
             key={index}

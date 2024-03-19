@@ -1,10 +1,14 @@
 import { useEffect, useState } from "react";
 import NikeLogo from "../../assets/nikeLogo.svg";
 import hamMenu from "../../assets/hamburger.svg";
-import Button from "../../Component/Button";
+import SignupModal from "../../Onboarding/modal";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [openModal, setOpenModal] = useState(false);
+  
+  const close = () => setOpenModal(false)
+  const open = () => setOpenModal(true)
 
   const handleScroll = () => {
     const offset = window.scrollY;
@@ -20,12 +24,13 @@ const Navbar = () => {
     window.addEventListener("scroll", handleScroll);
   });
 
+
   return (
     <header
       className={
         !scrolled
-          ? "w-[100%] px-[10px] items-center min-h-[11vh] box-border flex justify-between bg-gray-800 transition-all ease-in duration-75"
-          : "w-[100%] px-[10px] items-center min-h-[11vh] box-border flex justify-between transition-all ease-in duration-75 fixed top-0 left-0 bg-gray-900"
+          ? "w-[100%] px-[40px] items-center min-h-[11vh] box-border flex justify-between bg-gray-800 transition-all ease-in duration-75"
+          : "w-[100%] px-[40px] items-center min-h-[11vh] box-border flex justify-between transition-all ease-in duration-75 fixed top-0 left-0 bg-gray-900"
       }
     >
       <div>
@@ -52,9 +57,14 @@ const Navbar = () => {
       </nav>
 
       <div className="hidden md:flex">
-        <button className="bg-blue-500 py-[7px] px-5 text-[#fff] font-[400] rounded-[5px]">
+        <button 
+        onClick={() => setOpenModal(true)}
+        className="bg-blue-500 py-[7px] px-5 text-[#fff] font-[400] rounded-[5px]">
           Sign in
         </button>
+        {openModal && (
+          <SignupModal openModal={openModal} handleClose={close} />
+        )}
       </div>
     </header>
   );

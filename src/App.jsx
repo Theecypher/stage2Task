@@ -17,6 +17,7 @@ import Subscribe from "./Pages/Subscribe/Subscribe";
 import Footer from "./Pages/Footer/footer";
 import CreateComment from "./Tweet/createComment";
 import NewComment from "./Tweet/newComment";
+import SignupModal from "./Onboarding/modal";
 
 const App = () => {
   return (
