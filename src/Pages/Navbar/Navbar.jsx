@@ -1,72 +1,35 @@
-import { useEffect, useState } from "react";
-import NikeLogo from "../../assets/nikeLogo.svg";
-import hamMenu from "../../assets/hamburger.svg";
-import SignupModal from "../../Onboarding/modal";
+import { Link, NavLink } from "react-router-dom";
+import Logo from "../../component/logo";
+import { FaSearch, FaShoppingCart } from "react-icons/fa";
+import { Navlinks } from "./Navlinks";
+import cart from "../../assets/cart.svg";
+import search from "../../assets/search.svg";
+import Search from "../../component/search";
 
 const Navbar = () => {
-  const [scrolled, setScrolled] = useState(false);
-  const [openModal, setOpenModal] = useState(false);
-  
-  const close = () => setOpenModal(false)
-  const open = () => setOpenModal(true)
-
-  const handleScroll = () => {
-    const offset = window.scrollY;
-
-    if (offset > 130) {
-      setScrolled(true);
-    } else {
-      setScrolled(false);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-  });
-
-
   return (
-    <header
-      className={
-        !scrolled
-          ? "w-[100%] px-[40px] items-center min-h-[11vh] box-border flex justify-between bg-gray-800 transition-all ease-in duration-75"
-          : "w-[100%] px-[40px] items-center min-h-[11vh] box-border flex justify-between transition-all ease-in duration-75 fixed top-0 left-0 bg-gray-900"
-      }
-    >
-      <div>
-        <img src={NikeLogo} alt="" />
+    <div className="flex justify-between items-center bg-[#081142] text-[#fff] px-5 md:px-8 py-[10px] md:py-[45px]">
+      <Logo />
+
+      <Search />
+
+      <div className="hidden md:flex justify-between">
+        {Navlinks.map((item, index) => (
+          <ul key={index} className="flex items-center">
+            <li className="px-2 text-xs md:text-base">
+              <Link to={item.to}>{item.title}</Link>
+            </li>
+          </ul>
+        ))}
       </div>
 
-      <nav className="navigation">
-        <img src={hamMenu} className="w-[30px] md:hidden" alt="" />
-
-        <ul className="hidden md:flex justify-center items-center text-[#fff] font-[400] md:gap-[15px] gap-[24px]">
-          <li className="flex flex-col justify-center items-start px-[5px]">
-            Home
-          </li>
-          <li className="flex flex-col justify-center items-start px-[5px]">
-            About Us
-          </li>
-          <li className="flex flex-col justify-center items-start px-[5px]">
-            Products
-          </li>
-          <li className="flex flex-col justify-center items-start px-[5px]">
-            Contact Us
-          </li>
-        </ul>
-      </nav>
-
-      <div className="hidden md:flex">
-        <button 
-        onClick={() => setOpenModal(true)}
-        className="bg-blue-500 py-[7px] px-5 text-[#fff] font-[400] rounded-[5px]">
-          Sign in
-        </button>
-        {openModal && (
-          <SignupModal openModal={openModal} handleClose={close} />
-        )}
+      <div className="flex gap-[10px] justify-between">
+        <img src={search} sizes="18" alt="" className="hidden md:block" />
+        <NavLink to="cart">
+          <img src={cart} sizes="18" alt="" />
+        </NavLink>
       </div>
-    </header>
+    </div>
   );
 };
 

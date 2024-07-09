@@ -1,16 +1,16 @@
-const Button = ({ text, icon, redButton }) => {
-  return (
-    <div>
-      {/* <button className="text-[#fff] text-lg bg-red-500 py-3 mt-[30px] mb-[20px] px-10 rounded-[30px] flex items-center justify-center gap-3"> */}
-      <button className={redButton ? "text-[#fff] text-lg outline-none bg-[#ff4040] py-3 px-10 rounded-[30px] flex items-center justify-center gap-3"
-      : "border border-gray-600 ext-lg py-3 flex outline-none  justify-center items-center px-9 rounded-[30px]" 
-      }>
-        {text}
-        {icon}
-      </button>
+import { BiLink } from "react-icons/bi";
+import { Link } from "react-router-dom";
+import cart from "../assets/cart.svg";
 
-      {/* <button onClick={onClick} className={twMerge('bg-main-blue py-[10px] px-[24px] text-white text-[16px] rounded-[16px] hover:bg-opacity-75', className)}>{children}</button> */}
-    </div>
+const Button = ({ text, className, handleClick, isLogo }) => {
+  return (
+    <Link
+      onClick={handleClick}
+      className={`flex bg-[#081142] gap-[4px] w-[124px] py-[15px] px-[12px] justify-center rounded-[15px] ${className}`}
+    >
+      <p className="text-[#fff] font-bold text-xs leading-[14.52px]">{text}</p>
+      {!isLogo && <img src={cart} sizes="14" alt="" />}
+    </Link>
   );
 };
 
