@@ -3,7 +3,6 @@ import { Navlinks } from "./Navlinks";
 import cart from "../../assets/cart.svg";
 import search from "../../assets/search.svg";
 import Search from "../../component/search";
-import Logo from "../../component/logo";
 
 const Navbar = () => {
   return (
