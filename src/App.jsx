@@ -17,7 +17,6 @@ const App = () => {
         <Route path="/cart" element={<Cart />} />
       </Routes>
       <SectionFooter />
-      <FooterMobile />
     </div>
   );
 };

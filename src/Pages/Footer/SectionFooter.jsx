@@ -4,7 +4,7 @@ import { FooterData } from "./FooterData";
 
 const SectionFooter = () => {
   return (
-    <div className="bg-[#010411] px-4 pt-7 mt-14 text-[#fff] hidden md:block">
+    <div className="bg-[#010411] px-4 pt-7 mt-14 text-[#fff]">
       <Link className="italic text-xl">TechDepot</Link>
 
       <div className="flex justify-between border-t-2 my-4">
