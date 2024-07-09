@@ -15,7 +15,7 @@ const Cart = () => {
     clearCart,
     getCartTotal,
     ProductTotal,
-    addDeliveryFee
+    addDeliveryFee,
   } = useContext(CartContext);
 
   return (
@@ -101,11 +101,15 @@ const Cart = () => {
                   <h5>{addDeliveryFee()}</h5>
                 </div>
               </div>
-              <Button
-                isLogo="true"
-                text="checkout"
-                className="float-end my-5 rounded-[2px] w-[72px]"
-              />
+
+              <Link
+                to="/"
+                className={`flex float-end my-5 rounded-[2px] w-[72px] bg-[#081142] gap-[4px] py-[15px] px-[12px] justify-center`}
+              >
+                <p className="text-[#fff] font-bold text-xs leading-[14.52px]">
+                  checkout
+                </p>
+              </Link>
             </div>
           ) : (
             <EmptyCart />
