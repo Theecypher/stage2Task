@@ -1,6 +1,6 @@
 // import img from "../../assets/Ellipse 11.png"
 import cart from "../../assets/Vector.png";
-import Button from "../../component/Button";
+import Button from "../../Component/Button";
 import "./emptycart.css";
 
 const EmptyCart = () => {
