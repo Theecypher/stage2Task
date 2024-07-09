@@ -5,7 +5,6 @@ import close from "../../assets/cancel.svg";
 import EmptyCart from "./EmptyCart";
 import { Link } from "react-router-dom";
 import { AiOutlineArrowLeft } from "react-icons/ai";
-import Button from "../../component/Button";
 
 const Cart = () => {
   const {
