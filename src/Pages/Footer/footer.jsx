@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import Logo from "../../component/logo";
 import { FooterData } from "./FooterData";
 
-const Footer = () => {
+const SectionFooter = () => {
   return (
     <div className="bg-[#010411] px-4 py-4 text-[#fff] hidden md:block">
       <Logo />
@@ -45,4 +45,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default SectionFooter;

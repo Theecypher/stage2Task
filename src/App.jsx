@@ -5,7 +5,7 @@ import ProductPage from "./Pages/ProductPage/ProductPage";
 import ProductDisplay from "./Pages/ProductDisplay/ProductDisplay";
 import Cart from "./Pages/Cart/Cart";
 import FooterMobile from "./Pages/Footer/FooterMobile";
-import Footer from "./Pages/Footer/Footer";
+import SectionFooter from "./Pages/Footer/Footer";
 
 const App = () => {
   return (
@@ -16,7 +16,7 @@ const App = () => {
         <Route path="/display" element={<ProductDisplay />} />
         <Route path="/cart" element={<Cart />} />
       </Routes>
-      <Footer />
+      <SectionFooter />
       <FooterMobile />
     </div>
   );
