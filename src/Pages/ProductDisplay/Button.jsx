@@ -1,6 +1,6 @@
 import { BiLink } from "react-icons/bi";
 import { Link } from "react-router-dom";
-import cart from "../assets/cart.svg";
+import cart from "../../assets/cart.svg";
 
 const Button = ({ text, className, handleClick, isLogo }) => {
   return (
