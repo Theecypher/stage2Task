@@ -2,10 +2,10 @@ import { Link } from "react-router-dom";
 import { Navlinks } from "../Navbar/Navlinks";
 
 const links = [
-    { title: "All products", to: "/home" },
-    { title: "Laptop", to: "/Phones" },
-    { title: "Phones", to: "/products" },
-    { title: "Accessories", to: "/accessories" },
+    { title: "All products", to: "/" },
+    { title: "Laptop", to: "/" },
+    { title: "Phones", to: "/" },
+    { title: "Accessories", to: "/" },
     // "home", "Phones", "", "About us"
   ];
 
