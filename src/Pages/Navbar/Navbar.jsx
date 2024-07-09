@@ -1,5 +1,4 @@
 import { Link, NavLink } from "react-router-dom";
-import { FaSearch, FaShoppingCart } from "react-icons/fa";
 import { Navlinks } from "./Navlinks";
 import cart from "../../assets/cart.svg";
 import search from "../../assets/search.svg";
@@ -9,7 +8,7 @@ import Logo from "../../component/logo";
 const Navbar = () => {
   return (
     <div className="flex justify-between items-center bg-[#081142] text-[#fff] px-5 md:px-8 py-[10px] md:py-[45px]">
-      <Logo />
+     <Link className="italic text-xl">TechDepot</Link>
 
       <Search />
 
