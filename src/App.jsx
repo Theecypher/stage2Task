@@ -5,7 +5,7 @@ import ProductPage from "./Pages/ProductPage/ProductPage";
 import ProductDisplay from "./Pages/ProductDisplay/ProductDisplay";
 import Cart from "./Pages/Cart/Cart";
 import FooterMobile from "./Pages/Footer/FooterMobile";
-import SectionFooter from "./Pages/Footer/Footer";
+import SectionFooter from "./Pages/Footer/SectionFooter";
 
 const App = () => {
   return (
