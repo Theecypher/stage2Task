@@ -2,7 +2,7 @@ import { useContext } from "react";
 import CartHeader from "./CartHeader";
 import { CartContext } from "../../Context/CartContext";
 import close from "../../assets/cancel.svg";
-import Button from "../../component/Button";
+import Button from "../../Component/Button";
 import EmptyCart from "./EmptyCart";
 
 const Cart = () => {
@@ -69,7 +69,7 @@ const Cart = () => {
         </>
       )}
 
-      <div >
+      <div>
         {cartItems.length > 0 ? (
           <div className="mt-[250px] pt-[40px] mb-[200px]">
             <div className="flex justify-end gap-12 items-end">

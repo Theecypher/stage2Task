@@ -1,7 +1,7 @@
 import stars from "./stars.svg";
 import { ProductsData } from "./ProductsData";
 import { AiFillHeart, AiOutlineHeart } from "react-icons/ai";
-import Button from "../../component/Button";
+import Button from "../../Component/Button";
 import { Link, useNavigate } from "react-router-dom";
 import Cart from "../Cart/Cart";
 import { CartContext } from "../../Context/CartContext";
@@ -10,7 +10,7 @@ import { useContext, useEffect, useState } from "react";
 const Products = () => {
   const { cartItems, addToCart } = useContext(CartContext);
   //    const [product, setProducts] = useState([])
-  
+
   //    useEffect
 
   return (
@@ -40,7 +40,6 @@ const Products = () => {
                 />
               </svg>
               <span className="">{item.price}</span>
-        
             </p>
             <img src={stars} className="my-1" alt="" />
             <Button text="ADD TO CART" handleClick={() => addToCart(item)} />
