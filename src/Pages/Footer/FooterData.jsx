@@ -21,7 +21,7 @@ export const FooterData = [
   },
   {
     title: "Follow us",
-    links: ["@timbudevices"],
+    links: ["@techdepot"],
     socials: [
         tiktok,
         insta,
