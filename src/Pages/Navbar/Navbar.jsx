@@ -2,14 +2,22 @@ import { Link, NavLink } from "react-router-dom";
 import { Navlinks } from "./Navlinks";
 import cart from "../../assets/cart.svg";
 import search from "../../assets/search.svg";
-import Search from "../../component/search";
+import { AiOutlineSearch } from "react-icons/ai";
 
 const Navbar = () => {
   return (
     <div className="flex justify-between items-center bg-[#081142] text-[#fff] px-5 md:px-8 py-[10px] md:py-[45px]">
-     <Link className="italic text-xl">TechDepot</Link>
+      <Link className="italic text-xl">TechDepot</Link>
 
-      <Search />
+      <div className="bg-white flex md:hidden items-center px-2">
+        <input
+          type="text"
+          className=" placeholder-black outline-none border-none"
+          placeholder="search"
+        />
+        <img src={search} className="text-black" alt="" />
+        <AiOutlineSearch className="text-black font-extralight" />
+      </div>
 
       <div className="hidden md:flex justify-between">
         {Navlinks.map((item, index) => (
