@@ -1,5 +1,5 @@
 // import img from "../../assets/Ellipse 11.png"
-import cart from "../../assets/vector.png"
+import cart from "../../assets/Vector.png"
 import "./emptycart.css"
 
 const EmptyCart = () => {
