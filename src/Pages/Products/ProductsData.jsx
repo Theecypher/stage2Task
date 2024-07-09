@@ -5,12 +5,21 @@ import img from "../../assets/Frame 48.png";
 import img1 from "../../assets/Frame 49.png";
 import img6 from "../../assets/Frame 82.png";
 import img4 from "../../assets/Frame 52.png";
+import img7 from "../../assets/Frame 47.png";
 
 export const ProductsData = [
   {
+    id: 7,
+    img: img7,
+    name: "Dell XPS 9510",
+    price: 90000,
+    amount: "90,000",
+    memory: "128GB",
+  },
+  {
     id: 0,
     img: img,
-    name: "Dell XPS 9510",
+    name: "Samsung Galaxy S21",
     price: 1000000,
     amount: "1,000,000",
     color: "black",
@@ -19,7 +28,7 @@ export const ProductsData = [
   {
     id: 1,
     img: img1,
-    name: "Dell XPS 9510",
+    name: "Iphone 14 Pro Max",
     price: 2050000,
     amount: "2,050,000",
     color: "pink",
@@ -28,7 +37,7 @@ export const ProductsData = [
   {
     id: 2,
     img: img2,
-    name: "Dell XPS 9510",
+    name: "Samsung Galaxy Flip",
     price: 850000,
     amount: "85,0000",
     color: "black",
@@ -37,7 +46,7 @@ export const ProductsData = [
   {
     id: 3,
     img: img3,
-    name: "Dell XPS 9510",
+    name: "Iphone SE Max",
     price: 850000,
     amount: "85,0000",
     color: "grey",
@@ -46,7 +55,7 @@ export const ProductsData = [
   {
     id: 4,
     img: img4,
-    name: "Dell XPS 9510",
+    name: "LG Wireless Earbuds",
     price: 1950000,
     amount: "195,0000",
     color: "black",
@@ -55,7 +64,7 @@ export const ProductsData = [
   {
     id: 5,
     img: img5,
-    name: "Dell XPS 9510",
+    name: "Tecno Camon 20 ",
     price: 900000,
     amount: "90,0000",
     color: "pink",
@@ -64,7 +73,7 @@ export const ProductsData = [
   {
     id: 6,
     img: img6,
-    name: "Dell XPS 9510",
+    name: "Oraimo Earpiece",
     price: 90000,
     amount: "90,000",
     memory: "128GB",
