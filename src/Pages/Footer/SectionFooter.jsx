@@ -1,13 +1,11 @@
 import { Link } from "react-router-dom";
 import { FooterData } from "./FooterData";
-import Logo from "../../component/logo";
+
 
 const SectionFooter = () => {
   return (
     <div className="bg-[#010411] px-4 py-4 text-[#fff] hidden md:block">
-      <Logo />
-
-      {/* <p className="border-b w-[95%] mx-auto"></p> */}
+      <Link className="italic text-xl">TechDepot</Link>
 
       <div className="flex justify-between border-t-2 my-4">
         {FooterData.map((item, index) => (
