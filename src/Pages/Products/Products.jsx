@@ -1,7 +1,7 @@
 import stars from "./stars.svg";
 import { ProductsData } from "./ProductsData";
 import { AiFillHeart, AiOutlineHeart } from "react-icons/ai";
-import Button from "../../component/Button";
+import Button from "../../Component/Button";
 import { Link, useNavigate } from "react-router-dom";
 import Cart from "../Cart/Cart";
 import { CartContext } from "../../Context/CartContext";
