@@ -6,10 +6,10 @@ import { AiOutlineSearch } from "react-icons/ai";
 
 const Navbar = () => {
   return (
-    <div className="flex justify-between items-center bg-[#081142] text-[#fff] px-5 md:px-8 py-[10px] md:py-[45px]">
-      <Link className="italic text-xl">TechDepot</Link>
+    <div className="flex justify-between items-center bg-[#081142] text-[#fff] px-3 md:px-8 py-[10px] md:py-[45px]">
+      <Link className="italic text-xs md:text-xl">TechDepot</Link>
 
-      <div className="bg-white flex md:hidden items-center px-2">
+      <div className="bg-white flex md:hidden items-center">
         <input
           type="text"
           className=" placeholder-black outline-none border-none"

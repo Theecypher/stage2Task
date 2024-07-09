@@ -10,7 +10,6 @@ export const CartProvider = ({ children }) => {
   );
 
   const addToCart = (item) => {
-    console.log(item);
     const isItemInCart = cartItems.find((cartItem) => cartItem.id === item.id);
 
     if (isItemInCart) {
@@ -29,7 +28,6 @@ export const CartProvider = ({ children }) => {
   const removeFromCart = (item) => {
     const isItemInCart = cartItems.find((cartItem) => cartItem.id === item.id);
 
-    // console.log(item);
 
     if (isItemInCart.quantity === 1) {
       setCartItems(cartItems.filter((cartItem) => cartItem.id !== item.id));
@@ -55,21 +53,24 @@ export const CartProvider = ({ children }) => {
     );
   };
 
+  const addDeliveryFee = () => {
+    return cartItems.reduce(
+      (total, item) => total + item.price * item.quantity + 10000,
+      0
+    );
+  };
+
   useEffect(() => {
     localStorage.setItem("cartItems", JSON.stringify(cartItems));
   }, [cartItems]);
 
-  const ProductTotal = (item, q) => {
-    // const qty = parseFloat(item.quantity)
-    // const prc = item.price
+  const ProductTotal = (item) => {
+    const qty = item.quantity
+    const prc = item.price
 
-    const num = q.quantity
+    const num = qty * prc
 
-    const sum = Number(item) * item
-
-    console.log(sum);
-
-    // return cartItems.reduce((total, item) => console.log({total, item}))
+    return num;
   };
 
   useEffect(() => {
@@ -88,6 +89,7 @@ export const CartProvider = ({ children }) => {
         clearCart,
         getCartTotal,
         ProductTotal,
+        addDeliveryFee
       }}
     >
       {children}

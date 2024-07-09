@@ -4,7 +4,7 @@ import { FooterData } from "./FooterData";
 
 const SectionFooter = () => {
   return (
-    <div className="bg-[#010411] px-4 py-4 text-[#fff] hidden md:block">
+    <div className="bg-[#010411] px-4 pt-7 mt-14 text-[#fff] hidden md:block">
       <Link className="italic text-xl">TechDepot</Link>
 
       <div className="flex justify-between border-t-2 my-4">
@@ -14,7 +14,7 @@ const SectionFooter = () => {
               {item.title}
             </h1>
             {item.links.map((item, index) => (
-              <div>
+              <div key={index}>
                 <Link
                   className="text-xs md:text-xl flex flex-col gap-3"
                   key={index}
@@ -26,7 +26,7 @@ const SectionFooter = () => {
             <div className="flex gap-2">
               {item.socials &&
                 item.socials.map((item, index) => (
-                  <div>
+                  <div key={index}>
                     <img
                       className="md:w-[22.22px]"
                       key={index}

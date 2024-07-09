@@ -2,9 +2,10 @@ import { BiLink } from "react-icons/bi";
 import { Link } from "react-router-dom";
 import cart from "../assets/cart.svg";
 
-const Button = ({ text, className, handleClick, isLogo }) => {
+const Button = ({ text, className, handleClick, isLogo, to }) => {
   return (
     <Link
+    to={to}
       onClick={handleClick}
       className={`flex bg-[#081142] gap-[4px] w-[124px] py-[15px] px-[12px] justify-center rounded-[15px] ${className}`}
     >
