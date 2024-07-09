@@ -2,11 +2,10 @@ import { useContext } from "react";
 import CartHeader from "./CartHeader";
 import { CartContext } from "../../Context/CartContext";
 import close from "../../assets/cancel.svg";
-import Button from "../../component/Button";
 import EmptyCart from "./EmptyCart";
 import { Link } from "react-router-dom";
-import { FaArrowLeft } from "react-icons/fa";
 import { AiOutlineArrowLeft } from "react-icons/ai";
+import Button from "../../component/Button";
 
 const Cart = () => {
   const {
