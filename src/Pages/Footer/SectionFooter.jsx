@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import Logo from "../../component/logo";
 import { FooterData } from "./FooterData";
+import Logo from "../../component/logo";
 
 const SectionFooter = () => {
   return (
