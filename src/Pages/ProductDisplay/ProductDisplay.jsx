@@ -1,5 +1,5 @@
 import img1 from "../../assets/image 23.png";
-import Button from "../../Component/Button";
+import cart from "../../assets/cart.svg"
 
 const ProductDisplay = () => {
   return (
@@ -47,7 +47,16 @@ const ProductDisplay = () => {
           </div>
         </div>
 
-        <Button className="w-[170px]" text="PROCEED TO CART" />
+        {/* <Button className="w-[170px]" text="PROCEED TO CART" /> */}
+        <Link
+          // onClick={handleClick}
+          className={`flex bg-[#081142] gap-[4px] w-[170px] py-[15px] px-[12px] justify-center rounded-[15px]`}
+        >
+          <p className="text-[#fff] font-bold text-xs leading-[14.52px]">
+            PROCEED TO CART
+          </p>
+          <img src={cart} sizes="14" alt="" />
+        </Link>
       </div>
     </div>
   );
