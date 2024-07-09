@@ -1,5 +1,6 @@
 import img1 from "../../assets/image 23.png";
 import Button from "../../component/Button";
+// import Button from "../../component/Button";
 
 const ProductDisplay = () => {
   return (
