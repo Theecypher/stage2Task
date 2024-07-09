@@ -6,7 +6,6 @@ const links = [
     { title: "Laptop", to: "/" },
     { title: "Phones", to: "/" },
     { title: "Accessories", to: "/" },
-    // "home", "Phones", "", "About us"
   ];
 
 const Header = () => {
