@@ -10,7 +10,7 @@ const Navbar = () => {
     <div className="flex justify-between items-center bg-[#081142] text-[#fff] px-3 md:px-8 py-[10px] md:py-[25px]">
       <Link className="italic text-xs md:text-xl">TechDepot</Link>
 
-      <div className="bg-white flex items-center justify-between md:px-5 py-[5px]">
+      <div className="bg-white flex items-center justify-between md:px-5 py-[2px] md:py-[5px]">
         <input
           type="text"
           className=" placeholder-black outline-none border-none"
@@ -22,7 +22,7 @@ const Navbar = () => {
 
       <div className="flex gap-[10px] justify-between">
         <NavLink to="cart">
-          <img className="md:w-" src={cart} sizes="18" alt="" />
+          <img className="" src={cart} sizes="18" alt="" />
         </NavLink>
         <img src={contact} alt="" className="hidden md:block w-3" />
       </div>
