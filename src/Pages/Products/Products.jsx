@@ -9,6 +9,18 @@ import { useContext, useEffect, useState } from "react";
 
 const Products = () => {
   const { cartItems, addToCart } = useContext(CartContext);
+  const [showModal, setShowModal] = useState(false)
+
+  const added = (item) => {
+    setShowModal(true)
+    addToCart(item)
+  }
+
+  if (showModal) {
+    setTimeout(() => {
+      setShowModal(false)
+    }, 2000);
+  }
 
   return (
     <div className="mx-auto mt-[35px] md:px-[30px] w-[263px] md:w-full">
@@ -39,10 +51,12 @@ const Products = () => {
               <span className="">{item.amount}</span>
             </p>
             <img src={stars} className="my-1" alt="" />
-            <Button text="ADD TO CART" handleClick={() => addToCart(item)} />
+            <Button text="ADD TO CART" handleClick={() => added(item)} />
           </div>
         ))}
       </div>
+
+      {showModal && <button className="bg-[#081142] text-white font-bold p-2 fixed top-[10%] right-5 z-10">Product added to cart</button>}
     </div>
   );
 };
