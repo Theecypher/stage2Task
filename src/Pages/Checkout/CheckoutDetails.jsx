@@ -1,9 +1,11 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { CartContext } from "../../Context/CartContext";
 import { Link } from "react-router-dom";
 import naira from "../../assets/naira.png";
 import round from "../../assets/round.svg";
 import round1 from "../../assets/round2.png";
+import CheckoutPayment from "./CheckoutPayment";
+import { ModalContext } from "../../Context/ModalContext";
 
 const CheckoutDetails = () => {
   const {
@@ -15,11 +17,12 @@ const CheckoutDetails = () => {
     ProductTotal,
     addDeliveryFee,
   } = useContext(CartContext);
+  const { openModalFuncn, openModal } = useContext(ModalContext)
 
   const paymentList = ["Pay with Card", "Pay with Transfer", "Pay with USSD"];
 
   return (
-    <>
+    <div >
       <div className="flex mt-3 mb-5 items-center justify-center gap-[1px]">
         <img src={round1} alt="" />
         <p className="text-[8px] md:text-[18px] lg:text-[30px]">Shipping</p>
@@ -105,14 +108,18 @@ const CheckoutDetails = () => {
             </div>
 
             <Link>
-              <button className="absolute text-[9px] md:text-xl lg:text-3xl bottom-0 left-0 p-3 w-full bg-[#D9D9D9] text-black">
+              <button
+              onClick={() => openModalFuncn()}
+               className="absolute text-[9px] md:text-xl lg:text-3xl bottom-0 left-0 p-3 w-full bg-[#D9D9D9] text-black">
                 Contine Payment
               </button>
             </Link>
           </div>
         </div>
       </div>
-    </>
+
+      {openModal && <CheckoutPayment /> }
+    </div>
   );
 };
 
