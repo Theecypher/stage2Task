@@ -7,7 +7,6 @@ const Checkout = () => {
         <div className="my-8">
             <h3 className="text-center text-[18px] my-7 text-[#000] md:text-3xl lg:text-5xl font-bold">Checkout</h3>
 
-            <div>
                 <div className="flex mt-3 mb-5 items-center justify-center gap-[1px]">
                     <img src={round} alt="" />
                     <p className="text-[8px] md:text-[18px] lg:text-[30px]">Shipping</p>
@@ -18,7 +17,6 @@ const Checkout = () => {
                     <img src={round1} alt="" />
                     <p className="text-[8px] md:text-[18px] lg:text-[30px]">Confirmation</p>
                 </div>
-            </div>
 
             <CheckoutForm />
         </div>

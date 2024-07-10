@@ -19,7 +19,7 @@ const Products = () => {
   if (showModal) {
     setTimeout(() => {
       setShowModal(false)
-    }, 2000);
+    }, 1000);
   }
 
   return (
@@ -56,7 +56,7 @@ const Products = () => {
         ))}
       </div>
 
-      {showModal && <button className="bg-[#081142] text-white font-bold p-2 fixed top-[10%] right-5 z-10">Product added to cart</button>}
+      {showModal && <button className="bg-[#081142] text-white font-bold p-2 fixed top-0 right-[48%] z-10">Successfully added to cart</button>}
     </div>
   );
 };
