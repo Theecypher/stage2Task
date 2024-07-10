@@ -8,7 +8,7 @@ import { AiOutlineSearch } from "react-icons/ai";
 const Navbar = () => {
   return (
     <div className="flex justify-between items-center bg-[#081142] text-[#fff] px-3 md:px-8 py-[10px] md:py-[25px]">
-      <Link className="italic text-xs md:text-xl">TechDepot</Link>
+      <Link className="italic text-xs md:text-xl" to="/">TechDepot</Link>
 
       <div className="bg-white flex items-center justify-between md:px-5 py-[2px] md:py-[5px]">
         <input
