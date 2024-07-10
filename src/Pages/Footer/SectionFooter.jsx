@@ -7,7 +7,7 @@ const SectionFooter = () => {
     <div className="bg-[#010411] px-4 pt-7 mt-14 text-[#fff]">
       <Link className="italic text-xl">TechDepot</Link>
 
-      <div className="flex justify-between border-t-2 my-4">
+      <div className="flex justify-between border-t-2 mt-4">
         {FooterData.map((item, index) => (
           <div className="" key={index}>
             <h1 className="font-semibold text-sm mt-3 mb-1 md:text-3xl">

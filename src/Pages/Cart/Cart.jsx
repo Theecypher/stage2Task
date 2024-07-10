@@ -102,7 +102,7 @@ const Cart = () => {
               </div>
 
               <Link
-                to="/"
+                to="/checkout"
                 className={`flex float-end my-5 rounded-[2px] w-[72px] bg-[#081142] gap-[4px] py-[15px] px-[12px] justify-center`}
               >
                 <p className="text-[#fff] font-bold text-xs leading-[14.52px]">
