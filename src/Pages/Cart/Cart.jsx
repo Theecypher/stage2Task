@@ -82,7 +82,7 @@ const Cart = () => {
 
         <div>
           {cartItems.length > 0 ? (
-            <div className="mt-[250px] pt-[40px] mb-[200px]">
+            <div className="pt-[150px] mb-[200px]">
               <div className="flex justify-end gap-12 items-end">
                 <div className="flex flex-col gap-6">
                   <h5 className="">Subtotal</h5>
