@@ -68,11 +68,12 @@ const CheckoutForm = () => {
                 />
               </div>
 
+         
               <div className="flex gap-3">
                 <div className="">
                   <label htmlFor="">City</label>
                   <input
-                    className="bg-white px-2 py-[10px] text-black outline-none w-full md:w-[345px] border-none lg:w-[46vw]"
+                    className="bg-white px-2 text-black py-[10px] outline-none w-full md:w-[345px] border-none lg:w-[46vw]"
                     type="text"
                   />
                 </div>
@@ -84,7 +85,6 @@ const CheckoutForm = () => {
                   />
                 </div>
               </div>
-
               <div className="flex gap-3">
                 <div className="">
                   <label htmlFor="">Email Address</label>

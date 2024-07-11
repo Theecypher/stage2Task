@@ -1,0 +1,8 @@
+.wall {
+    background-image: url("../../assets//Vector3.png");
+    width: 120px;
+    height: 120px;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: cover;
+}

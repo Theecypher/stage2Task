@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 import naira from "../../assets/naira.png";
 import round from "../../assets/round.svg";
 import round1 from "../../assets/round2.png";
-import CheckoutPayment from "./CheckoutPayment";
 import { ModalContext } from "../../Context/ModalContext";
+import CheckoutModal from "./CheckoutModal";
 
 const CheckoutDetails = () => {
   const {
@@ -55,9 +55,10 @@ const CheckoutDetails = () => {
             </div>
           </div>
 
-          <div className="bg-[#454A68] relative py-5 px-2 md:px-10 text-white">
+          <div className={openModal ? "hidden" : "bg-[#454A68] relative py-5 px-2 md:px-10 text-white"}>
+          {/* <div className="bg-[#454A68] relative py-5 px-2 md:px-10 text-white"> */}
             <div>
-              <h2 className="text-[10px] font-bold md:text-2xl">
+              <h2 className="text-[10px] font-semibold  md:text-2xl">
                 Order Summary
               </h2>
               <div>
@@ -118,7 +119,7 @@ const CheckoutDetails = () => {
         </div>
       </div>
 
-      {openModal && <CheckoutPayment /> }
+      {openModal && <CheckoutModal /> }
     </div>
   );
 };
